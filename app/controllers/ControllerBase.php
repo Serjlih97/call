@@ -12,6 +12,7 @@ class ControllerBase extends Controller
 	 */
 	public function initialize()
 	{
+		$this->view->setVar('title', 'Колледж - Владикавказский колледж электроники');
 	}
 
 	/**

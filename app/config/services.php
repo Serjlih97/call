@@ -36,8 +36,9 @@ $di->set('dispatcher', function() use ($di)
 				case PhDispatcher::EXCEPTION_HANDLER_NOT_FOUND:
 				case PhDispatcher::EXCEPTION_ACTION_NOT_FOUND:
 					$dispatcher->forward([
-						'controller' => 'index',
-						'action'     => 'notfound',
+						'controller' => 'page',
+						'action'     => 'index',
+						'params'     => [$dispatcher->getControllerName()]
 					]);
 					return false;
 			}
