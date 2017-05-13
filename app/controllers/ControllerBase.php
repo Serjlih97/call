@@ -27,7 +27,6 @@ class ControllerBase extends Controller
 		if(!$this->request->isAjax())
 		{
 			header('Location: /notfound/');
-			// $this->response->redirect('/notfound/');
 			$this->view->disable();
 		}
 		else

@@ -2,10 +2,9 @@
 $router = new \Phalcon\Mvc\Router();
 
 $router->add(
-	"/detail/:params", [
+	"/notfound/", [
 		"controller" => "index",
-		"action"     => "detail",
-		"params"     => 1,
+		"action"     => "notfound"
 	]
 );
 
