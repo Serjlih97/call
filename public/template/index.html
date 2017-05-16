@@ -10,6 +10,7 @@
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 <script src="js/jquery.min.js"></script>
+<script src="js/scripts.js"></script>
 </head>
 <body>
 <!-- header -->
@@ -33,26 +34,44 @@
 				<div class="head-nav">
 					<span class="menu"></span>
 					<ul class="cl-effect-15">
-						<li class="active dropdown">
+						<li class="active dropdown" onclick="main.showMobSubmenu(this)">
 							<a href="index.html">Колледж</a>
-							<ul class="dropdown-list">
+							<ul class="dropdown-list-custom">
 								<li>
-									<a href="#">Lorem ipsum dolor.</a>
+									<a href="#">Основные сведенья</a>
 								</li>
 								<li>
-									<a href="#">Lorem ipsum dolor.</a>
+									<a href="#">Отчет о результатах самообследования</a>
 								</li>
 								<li>
-									<a href="#">Lorem ipsum dolor.</a>
+									<a href="#">Структура колледжа</a>
 								</li>
 								<li>
-									<a href="#">Lorem ipsum dolor.</a>
+									<a href="#">История</a>
+								</li>
+								<li>
+									<a href="#">Образовательные стандарты</a>
+								</li>
+								<li>
+									<a href="#">Руководство и педагогический состав</a>
+								</li>
+								<li>
+									<a href="#">Новости</a>
+								</li>
+								<li>
+									<a href="#">Нормативные документы</a>
+								</li>
+								<li>
+									<a href="#">Материально-техническая база</a>
+								</li>
+								<li>
+									<a href="#">Платные услуги</a>
 								</li>
 							</ul>
 						</li>
 						<li><a href="about.html" data-hover="Контакты">Контакты</a></li>
 						<li><a href="photos.html" data-hover="АБИТУРИЕНТУ">АБИТУРИЕНТУ</a></li>
-						<li><a href="contact.html" data-hover="Спекиальности">Спекиальности</a></li>
+						<li><a href="contact.html" data-hover="Специальности">Специальности</a></li>
 						<li><a href="404.html" data-hover="Фотогалерея">Фотогалерея</a></li>
 						<li><a href="contact.html" data-hover="Учебные планы">Учебные планы</a></li>
 						<div class="clearfix"> </div>
@@ -79,34 +98,28 @@
 	<div class="container">
 		<div class="load_more">	
 			<div class="row">
-				<div class="col-lg-9">
+				<div class="col-lg-3 col-md-3 col-lg-push-9 col-sm-3 col-sm-push-9 col-md-push-9">
+					<div class="posts">
+						<h4>Дополнительное меню</h4>
+						<h6 class="parent-menu">
+							<a href="#" onclick="main.showSubmenu(this, event)">Многофункциональный центр прикладных квалификаций (МФЦПК)</a>
+							<ul class="sub-menu">
+								<li><a href="#">Что такое МФЦПК</a></li>
+								<li><a href="#">Приказ о создании МФЦПК</a></li>
+								<li><a href="#">Положение об МФЦПК</a></li>
+								<li><a href="#">Структура управления МФЦПК</a></li>
+								<li><a href="#">Правила приема МФЦПК</a></li>
+							</ul>
+						</h6>
+						<h6><a href="#">Полезные ссылки</a></h6>
+						<h6><a href="#">Обратная связь</a></h6>
+					</div>
+				</div>
+				<div class="col-lg-9 col-md-9 col-md-pull-3 col-sm-9 col-sm-pull-3 col-lg-pull-3">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae minima, temporibus facere odit? Nemo ab nam amet dignissimos reiciendis, cumque labore consectetur, possimus in dolores quidem provident at totam deleniti.</p>
 				</div>
-				<div class="col-lg-3">
-					<div class="posts">
-						<h4>Recent posts</h4>
-						<h6><a href="#">Aliquam tincidunt mauris</a></h6>
-						<h6><a href="#">Vestibulum auctor lipsum</a></h6>
-						<h6><a href="#">Nunc dignissim risus</a></h6>
-						<h6><a href="#">Cras ornare tristiqu</a></h6>
-					</div>
-					<div class="comments">
-						<h4>Recent Comments</h4>
-						<h6><a href="#">Amada Doe <span>on</span> Hello World!</a></h6>
-						<h6><a href="#">Peter Doe <span>on</span> Photography</a></h6>
-						<h6><a href="#">Steve Roberts <span>on</span> HTML5/CSS3</a></h6>
-						<h6><a href="#">Doe Peter<span>on</span> Photography</a></h6>
-					</div>
-					<div class="archievs">
-						<h4>Archives</h4>
-						<h6><a href="#">October 2013</a></h6>
-						<h6><a href="#">September 2013</a></h6>
-						<h6><a href="#">August 2013</a></h6>
-						<h6><a href="#">July 2013</a></h6>
-					</div>
-				</div>
+				
 			</div>
-			
 	    </div>
 	</div>
 </div>

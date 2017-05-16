@@ -1,8 +1,3 @@
-/*Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
---*/
 h4, h5, h6,
 h1, h2, h3 {margin-top: 0;}
 ul, ol {margin: 0;}
@@ -1236,11 +1231,7 @@ ul.links li.last {
 .contact-top h2 {
 	font-size: 1.8em;
 }
-.content p {
-	text-align: center;
-	width: 47%;
-	margin: 0 auto;
-}
+
 .content h3 {
 	text-align: center;
 }
@@ -1338,9 +1329,9 @@ div#portfolio {
 }
 .posts {
 	text-align: left;
-	float: left;
-	width: 50%;
-	margin: 2em 0 0;
+	/*float: left;*/
+	/* width: 50%; */
+	/*margin: 2em 0 0;*/
 }
 .archievs {
 	display: none;
@@ -1694,4 +1685,117 @@ span.icon_text {
 ul.links li, ul.links_middle li, ul.links_bottom li {
 	margin-right: 13px;
 }
+}
+
+.dropdown
+{
+	position: relative;
+}
+
+.head-nav .dropdown-list-custom
+{
+	position: absolute;
+	background-color: #7593b1;
+	z-index: 3;
+	padding: 0;
+	border: 1px solid #323232;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	overflow: hidden;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.head-nav ul.dropdown-list-custom a 
+{
+	font-size: 14px;
+	margin: 0;
+	text-transform: none;
+	letter-spacing: normal;
+	padding: 4px 10px;
+}
+
+.head-nav ul.dropdown-list-custom li
+{
+	margin-bottom: 5px;
+	margin-left: 0;
+	margin-right: 0;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	display: block;
+}
+
+.head-nav ul.dropdown-list-custom li:last-child
+{
+	margin-bottom: 0;
+}
+
+.head-nav ul.dropdown-list-custom li:hover
+{
+	background-color: #556a7f;
+}
+
+.dropdown
+{
+	cursor: pointer;
+}
+
+.dropdown:hover .dropdown-list-custom
+{
+	visibility: visible;
+	opacity: 1;
+}
+
+.dropdown > a
+{
+	pointer-events: none;
+	cursor: pointer;
+}
+
+.sub-menu
+{
+	list-style-type: none;
+	padding-left: 10px;
+	margin-top: 6px;
+	display: none;
+}
+
+/*.parent-menu > a:hover + .sub-menu
+{
+	display: block;
+}*/
+
+@media (max-width: 768px)
+{
+	.head-nav .dropdown-list-custom
+	{
+		position: static;
+		display: none !important;
+		top: 0;
+		padding-top: 0;
+		background-color: transparent !important;
+		border: none !important;
+		/*margin-top: -10px;*/
+	}
+	.show-sub-menu
+	.dropdown:hover .dropdown-list-custom
+	{
+		display: none;
+		visibility: hidden;
+		opacity: 0;
+	}
+	.head-nav ul.dropdown-list li a
+	{
+		margin: 0;
+	}
+	.dropdown.show-sub-menu .dropdown-list-custom
+	{
+		display: block !important;
+	}
+	.dropdown
+	{
+
+	}
 }
