@@ -57,11 +57,11 @@
 								</li>
 							</ul>
 						</li>
-						<li><a href="about.html" data-hover="Контакты">Контакты</a></li>
-						<li><a href="photos.html" data-hover="АБИТУРИЕНТУ">АБИТУРИЕНТУ</a></li>
-						<li><a href="contact.html" data-hover="Специальности">Специальности</a></li>
-						<li><a href="404.html" data-hover="Фотогалерея">Фотогалерея</a></li>
-						<li><a href="contact.html" data-hover="Учебные планы">Учебные планы</a></li>
+						<li><a href="/gallery" data-hover="Контакты">Контакты</a></li>
+						<li><a href="/gallery" data-hover="АБИТУРИЕНТУ">АБИТУРИЕНТУ</a></li>
+						<li><a href="/gallery" data-hover="Специальности">Специальности</a></li>
+						<li><a href="/gallery" data-hover="Фотогалерея">Фотогалерея</a></li>
+						<li><a href="/gallery" data-hover="Учебные планы">Учебные планы</a></li>
 						<div class="clearfix"> </div>
 					</ul>
 				</div>
