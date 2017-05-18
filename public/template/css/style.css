@@ -1696,15 +1696,19 @@ ul.links li, ul.links_middle li, ul.links_bottom li {
 {
 	position: absolute;
 	background-color: #7593b1;
+	width: 300px;
 	z-index: 3;
 	padding: 0;
-	border: 1px solid #323232;
+	/*border: 1px solid #323232;*/
 	-webkit-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
 	overflow: hidden;
 	opacity: 0;
 	visibility: hidden;
+	-webkit-box-shadow: 0px 0px 23px -5px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 23px -5px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 23px -5px rgba(0,0,0,0.75);
 }
 
 .head-nav ul.dropdown-list-custom a 
@@ -1796,11 +1800,6 @@ ul.links li, ul.links_middle li, ul.links_bottom li {
 	font-weight: 600;
 }
 
-/*.parent-menu > a:hover + .sub-menu
-{
-	display: block;
-}*/
-
 @media (max-width: 768px)
 {
 	.head-nav .dropdown-list-custom
@@ -1853,5 +1852,11 @@ ul.links li, ul.links_middle li, ul.links_bottom li {
 		padding-left: 10px;
 		padding-right: 10px;
 		font-size: 14px;
+	}
+
+	.head-nav .dropdown-list-custom
+	{
+		width: auto;
+		box-shadow: none;
 	}
 }

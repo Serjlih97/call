@@ -11,7 +11,7 @@
 			<div class="header-right">
 				<div class="search2">
 					<form>
-						<input type="text" value="Search.." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search..';}">
+						<input type="text" value="Поиск..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search..';}">
 						<input type="submit" value="">
 					</form>
 				</div>
