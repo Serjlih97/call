@@ -1,6 +1,8 @@
 {% extends "layouts/main.volt" %}
 
 {% block content %}
-	<h1>{{ page.name }}</h1>
-	{{ page.html }}
+	<div class="container">
+		<h1>{{ page.name }}</h1>
+		{{ page.html }}
+	</div>
 {% endblock %}
