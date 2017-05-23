@@ -57,7 +57,6 @@
 								</li>
 							</ul>
 						</li>
-						<li><a href="/gallery" data-hover="Контакты">Контакты</a></li>
 						<li><a href="/gallery" data-hover="АБИТУРИЕНТУ">АБИТУРИЕНТУ</a></li>
 						<li><a href="/gallery" data-hover="Специальности">Специальности</a></li>
 						<li><a href="/gallery" data-hover="Фотогалерея">Фотогалерея</a></li>
