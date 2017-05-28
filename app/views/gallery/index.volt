@@ -3,7 +3,7 @@
 {% block content %}
 	<div class="container">
 		<h1 class="gallery-header">Галерея</h1>
-
+		
 		<div class="row">
 			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
 				<div class="gallery-item">

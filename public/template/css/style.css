@@ -1936,8 +1936,44 @@ ul.links li, ul.links_middle li, ul.links_bottom li {
 	color: #376061;
 }
 
+.slider
+{
+	width: 70%;
+	margin: 20px auto;
+}
+
+.big-slider
+{
+	margin-bottom: 20px;
+	line-height: 0;
+}
+
+.big-slider img
+{
+	width: 100%;
+}
+
+.small-slider__item
+{
+	padding: 0 5px;
+}
+
+.small-slider img
+{
+	width: 100%;
+}
+
+.slick-prev:before, .slick-next:before
+{
+	color: #556a7f;
+}
+
 @media (max-width: 768px)
 {
+	.slider
+	{
+		width: 100% !important;
+	}
 	.head-nav .dropdown-list-custom
 	{
 		position: static;

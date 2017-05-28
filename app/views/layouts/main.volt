@@ -3,6 +3,8 @@
 	<head>
 		<title>{{ title }}</title>
 		<link href="/template/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+		<link href="/template/css/slick.css" rel="stylesheet" type="text/css" media="all">
+		<link href="/template/css/slick-theme.css" rel="stylesheet" type="text/css" media="all">
 		<link href="/template/css/style.css" rel="stylesheet" type="text/css" media="all" />
 		<link href="/template/css/jquery.fancybox.min.css" rel="stylesheet" type="text/css" media="all" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,6 +14,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 		<script src="/template/js/jquery.min.js"></script>
 		<script src="/template/js/jquery.fancybox.min.js"></script>
+		<script src="/template/js/slick.min.js"></script>
 		<script src="/template/js/scripts.js"></script>
 	</head>
 	<body>
