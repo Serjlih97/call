@@ -1885,6 +1885,13 @@ ul.links li, ul.links_middle li, ul.links_bottom li {
 	box-sizing: border-box;
 }
 
+.post__text--full
+{
+	width: 100% !important;
+	margin: 0;
+	float: none;
+}
+
 .post
 {
 	border-bottom: 1px solid #bcc6de;
