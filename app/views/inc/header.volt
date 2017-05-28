@@ -6,7 +6,7 @@
 	<div class="container">
 		<div class="header">
 			<div class="logo">
-				<a href="index.html"><img src="/template/images/logo.png" class="img-responsive" alt="" /></a>
+				<a href="/"><img src="/template/images/logo.png" class="img-responsive" alt="" /></a>
 			</div>
 			<div class="header-right">
 				<div class="search2">
@@ -22,45 +22,23 @@
 				<div class="head-nav">
 					<span class="menu"></span>
 					<ul class="cl-effect-15">
-						<li class="active dropdown" onclick="main.showMobSubmenu(this)">
-							<a href="index.html">Колледж</a>
-							<ul class="dropdown-list-custom">
-								<li>
-									<a href="#">Основные сведенья</a>
-								</li>
-								<li>
-									<a href="#">Отчет о результатах самообследования</a>
-								</li>
-								<li>
-									<a href="#">Структура колледжа</a>
-								</li>
-								<li>
-									<a href="#">История</a>
-								</li>
-								<li>
-									<a href="#">Образовательные стандарты</a>
-								</li>
-								<li>
-									<a href="#">Руководство и педагогический состав</a>
-								</li>
-								<li>
-									<a href="#">Новости</a>
-								</li>
-								<li>
-									<a href="#">Нормативные документы</a>
-								</li>
-								<li>
-									<a href="#">Материально-техническая база</a>
-								</li>
-								<li>
-									<a href="#">Платные услуги</a>
-								</li>
-							</ul>
-						</li>
-						<li><a href="/gallery" data-hover="АБИТУРИЕНТУ">АБИТУРИЕНТУ</a></li>
-						<li><a href="/gallery" data-hover="Специальности">Специальности</a></li>
-						<li><a href="/gallery" data-hover="Фотогалерея">Фотогалерея</a></li>
-						<li><a href="/gallery" data-hover="Учебные планы">Учебные планы</a></li>
+						{% for key,menuItem in menu %}
+							<li
+								class="{{ (activeMenu is defined and activeMenu == key) ? 'active ' : ''}}{{ (menuItem|length > 1) ? 'dropdown' : '"' }}"
+								{{ (menuItem|length > 1) ? 'onclick="main.showMobSubmenu(this)"' : '"' }}>
+								<a href="{{ (menuItem|length > 1) ? 'javasctipt:void(0);' : '/' ~ menuItem[0].url ~ '/' }}">{{ menuNames[key] }}</a>
+								{% if menuItem|length > 1 %}
+									<ul class="dropdown-list-custom">
+										{% for element in menuItem %}
+											<li>
+												<a href="/{{ element.url }}/">{{ element.name }}</a>
+											</li>
+										{% endfor %}
+									</ul>
+								{% endif %}
+							</li>
+						{% endfor %}
+						<li><a href="/gallery/" data-hover="Фотогалерея">Фотогалерея</a></li>
 						<div class="clearfix"> </div>
 					</ul>
 				</div>

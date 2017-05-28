@@ -11,6 +11,7 @@ class PageController extends ControllerBase
 		if(!$page)
 			$this->pageNotFound();
 
+		$this->view->setVar('activeMenu', $page->category);
 		$this->view->setVar('page', $page);
 		$this->view->setVar('title', $page->name);
 	}

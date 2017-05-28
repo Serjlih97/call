@@ -12,6 +12,22 @@ class ControllerBase extends Controller
 	 */
 	public function initialize()
 	{
+		$pages = Pages::find();
+
+		// Формируем страницы по категориям для меню
+		$menu = [];
+		foreach($pages as $page)
+			$menu[$page->category][] = $page;
+		
+		$menuNames = [
+			1 => 'колледж',
+			2 => 'абитуриенту',
+			3 => 'специальности',
+			4 => 'учебный план'
+		];
+		
+		$this->view->setVar('menu', $menu);
+		$this->view->setVar('menuNames', $menuNames);
 		$this->view->setVar('title', 'Колледж - Владикавказский колледж электроники');
 	}
 

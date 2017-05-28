@@ -6,6 +6,9 @@ class IndexController extends ControllerBase
 {
 	public function indexAction()
 	{
+		$news = News::find();
+
+		$this->view->setVar('news', $news);
 	}
 
 	public function notfoundAction()
