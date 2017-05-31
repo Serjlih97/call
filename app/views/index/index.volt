@@ -2,7 +2,7 @@
 
 {% block content %}
 	<div class="container">
-		<div class="">	
+		<div class="">
 			<div class="row">
 				<div class="col-lg-3 col-md-3 col-lg-push-9 col-sm-3 col-sm-push-9 col-md-push-9">
 					<div class="posts">
@@ -149,7 +149,7 @@
 							<a href="#" class="btn btn-primary">Читать далее</a>
 						</div>
 					</section>
-					
+
 					<div class="paginator">
 						<ul class="paginator__list">
 							<li><a href="#" class="active"><</a></li>

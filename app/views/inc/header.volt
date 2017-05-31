@@ -26,7 +26,7 @@
 							<li
 								class="{{ (activeMenu is defined and activeMenu == key) ? 'active ' : ''}}{{ (menuItem|length > 1) ? 'dropdown' : '"' }}"
 								{{ (menuItem|length > 1) ? 'onclick="main.showMobSubmenu(this)"' : '"' }}>
-								<a href="{{ (menuItem|length > 1) ? 'javasctipt:void(0);' : '/' ~ menuItem[0].url ~ '/' }}">{{ menuNames[key] }}</a>
+								<a href="{{ (menuItem|length > 1) ? 'javasctipt:void(0);' : '/' ~ menuItem[0].url ~ '/' }}" data-hover="{{ menuNames[key] }}">{{ menuNames[key] }}</a>
 								{% if menuItem|length > 1 %}
 									<ul class="dropdown-list-custom">
 										{% for element in menuItem %}
@@ -39,6 +39,7 @@
 							</li>
 						{% endfor %}
 						<li><a href="/gallery/" data-hover="Фотогалерея">Фотогалерея</a></li>
+						<li><a href="/files/" data-hover="Файлы">Файлы</a></li>
 						<div class="clearfix"> </div>
 					</ul>
 				</div>
@@ -51,8 +52,8 @@
 					});
 				</script>
 				<!-- script-for-nav -->
-			</div> 
-		</div>				 
-	</div> 
+			</div>
+		</div>
+	</div>
 </div>
 <!-- header -->
