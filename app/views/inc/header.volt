@@ -31,7 +31,7 @@
 									<ul class="dropdown-list-custom">
 										{% for element in menuItem %}
 											<li>
-												<a href="/{{ element.url }}/">{{ element.name }}</a>
+												<a href="{{ element.getUrl() }}">{{ element.name }}</a>
 											</li>
 										{% endfor %}
 									</ul>

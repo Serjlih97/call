@@ -75,5 +75,18 @@ var main = {
 				}]
 			})
 		}
+	},
+	getNewsPage:function(page)
+	{
+		$.ajax({
+			url      : '/ajax/getNews/',
+			type     : 'POST',
+			dataType : 'json',
+			data     : {page:page}
+		}).done(function(e)
+		{
+			if(typeof e.success != 'undefined' && e.success)
+				$('._news-list').html(e.html);
+		});
 	}
 }

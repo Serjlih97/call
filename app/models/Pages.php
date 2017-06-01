@@ -95,4 +95,13 @@ class Pages extends ModelBase
 
 		return $slider;
 	}
+
+	/**
+	 * Функция для генирации url страницы
+	 * @return string url до страницы
+	 */
+	public function getUrl()
+	{
+		return "/{$this->url}/";
+	}
 }

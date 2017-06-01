@@ -12,7 +12,7 @@ class ControllerBase extends Controller
 	 */
 	public function initialize()
 	{
-		$pages = Pages::find(['conditions' => 'category < 5']);
+		$pages = Pages::find(['conditions' => 'category < 5 and url != ""', 'order' => 'sort asc']);
 
 		// Формируем страницы по категориям для меню
 		$menu = [];
