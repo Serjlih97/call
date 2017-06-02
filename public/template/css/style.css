@@ -1968,6 +1968,49 @@ ul.links li, ul.links_middle li, ul.links_bottom li {
 	color: #556a7f;
 }
 
+.album
+{
+	position: relative;
+	height: 250px;
+}
+
+
+.album img
+{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.album__descr
+{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	color: #fff;
+	padding: 10px;
+	z-index: 2;
+	background-color: rgba(0,0,0, 0.6);
+}
+
+.album__descr__left
+{
+	float: left;
+	width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.album__descr__right
+{
+	float: right;
+	width: 20%;
+	text-align: right;
+
+}
+
 @media (max-width: 768px)
 {
 	.slider

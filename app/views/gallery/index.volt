@@ -7,9 +7,15 @@
 		<div class="row">
 			{% for albom in alboms %}
 				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
-					<a href="{{ albom.getUrl() }}">
-						<img src="{{ albom.photo.getPicture() }}" alt="">
-					</a>
+					<div class="album">
+						<a href="{{ albom.getUrl() }}">
+							<img src="{{ albom.photo.getPicture() }}" alt="">
+							<div class="album__descr">
+								<div class="album__descr__left">Очень крутое мероприятие ну вот прям очень</div>
+								<div class="album__descr__right">123</div>
+							</div>
+						</a>
+					</div>
 				</div>
 			{% endfor %}
 		</div>
