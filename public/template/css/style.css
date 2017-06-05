@@ -213,7 +213,13 @@ p.adm a:hover {
 	font-weight: 400;
 	line-height: 1.8em;
 	text-align: left;
-	padding: 0.3em 0;
+	padding: 0.8em 0;
+}
+.content img
+{
+	max-width: 100%;
+	display: inline-block;
+	margin-bottom: 10px;
 }
 .link {
 	background: url(../images/arrow.png) no-repeat -1px 5px;
@@ -244,6 +250,7 @@ a.link:hover{
 	text-align: left;
 	line-height: 1.4em;
 	margin:0;
+	margin-bottom: 20px;
 }
 .integer {
 	background: #fff;
@@ -1033,6 +1040,36 @@ span {
 }
 ul.links li.last {
 	float: right;
+}
+.content h2
+{
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+.file-link
+{
+	display: inline-block;
+	font-size: 22px;
+	margin-right: 30px;
+	text-transform: uppercase;
+	color: #e21313;
+	font-weight: bold;
+	padding-left: 35px;
+	position: relative;
+}
+.file-link:before
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-image: url('../images/pdf.png');
+	width: 30px;
+	height: 30px;
+	content: '';
+	background-repeat: no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	background-position: center;
 }
 /*-- responsive-mediaquries --*/
 @media(max-width:1440px){
