@@ -37,6 +37,7 @@ var main = {
 				arrows: true,
 				fade: true,
 				asNavFor: '.small-slider',
+				adaptiveHeight: true,
 				responsive: [
 				{
 					breakpoint: 350,
