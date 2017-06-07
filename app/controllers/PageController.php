@@ -14,6 +14,6 @@ class PageController extends ControllerBase
 		$this->view->setVar('activeMenu', $page->category);
 		$this->view->setVar('page', $page);
 		$this->view->setVar('title', $page->name);
-		header("HTTP/1.1 200 Ok");
+		$this->response->setRawHeader("HTTP/1.1 200 OK");
 	}
 }

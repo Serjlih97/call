@@ -89,5 +89,12 @@ var main = {
 			if(typeof e.success != 'undefined' && e.success)
 				$('._news-list').html(e.html);
 		});
+	},
+	checkSearch: function(instance)
+	{
+		if($(instance).find('input:text').val() == 'Поиск...')
+			return false;
+
+		return true;
 	}
 }

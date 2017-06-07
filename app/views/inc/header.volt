@@ -10,8 +10,8 @@
 			</div>
 			<div class="header-right">
 				<div class="search2">
-					<form>
-						<input type="text" value="Поиск..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search..';}">
+					<form action="/search/" onsubmit="return main.checkSearch(this);">
+						<input type="text" name="search" value="Поиск..." placeholder="Поиск..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Поиск...';}">
 						<input type="submit" value="">
 					</form>
 				</div>
