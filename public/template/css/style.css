@@ -1244,6 +1244,10 @@ h1
 	font-size: 1.2em;
 }
 }
+h1
+{
+	margin-bottom: 30px;
+}
 /*-- responsive-mediaquries --*/
 @media(max-width:768px){
 .head-nav ul li{
@@ -1264,7 +1268,7 @@ h1
 	text-align: center;
 	background:#556A7F;
 	left:0em;
-	top:5em;
+	top:112px;
 }
 .head-nav span.menu {
 	display: block;
@@ -1580,7 +1584,7 @@ a.b-home {
 /*-- responsive-mediaquries --*/
 @media(max-width:320px){
 .head-nav span.menu {
-	top: 2.1em;
+	top: 55px;
 	right: 1.5em;
 }
 .biography-into h4 {
@@ -1593,6 +1597,8 @@ a.b-home {
 	font-size: 0.875em;
 	overflow: hidden;
 	height: 16px;
+	margin-top: 0;
+	width: 70%;
 }
 .content p {
 	font-size: 0.8125em;
@@ -1609,7 +1615,7 @@ a.b-home {
 	font-size: 0.875em;
 }
 .head-nav ul {
-	top: 5em;
+	top: 112px;
 }
 .footer p {
 	font-size: 0.8125em;

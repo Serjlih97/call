@@ -2,8 +2,8 @@
 
 {% block content %}
 	<div class="container">
-		<h1>Найденно новостей ({{ news|length }})</h1>
-		<h1>Найденно страниц ({{ pages|length }})</h1>
+		<h2>Найденно новостей ({{ news|length }})</h2>
+		<h2>Найденно страниц ({{ pages|length }})</h2>
 		<div class="tab-1">
 			{% for newsElement in news %}
 				<section class="post">
