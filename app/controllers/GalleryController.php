@@ -20,8 +20,11 @@ class GalleryController extends ControllerBase
 
 	public function albomAction($id)
 	{
-		$photos = Photos::find(['conditions' => 'albom_id = ?0', 'bind' => [$id]]);
+		$albom = Alboms::findFirstById($id);
 
-		$this->view->setVar('photos', $photos);
+		if(!$albom)
+			$this->pageNotFound();
+
+		$this->view->setVar('photos', $albom->photos);
 	}
 }
