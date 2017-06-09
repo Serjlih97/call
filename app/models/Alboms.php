@@ -16,6 +16,11 @@ class Alboms extends ModelBase
 		$this->hasOne('id', 'Photos', 'albom_id', [
 			'alias'  => 'photo'
 		]);
+
+		// Все фото альбома
+		$this->hasMany('id', 'Photos', 'albom_id', [
+			'alias'  => 'photos'
+		]);
 	}
 
 	/**

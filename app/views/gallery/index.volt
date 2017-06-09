@@ -11,8 +11,8 @@
 						<a href="{{ albom.getUrl() }}">
 							<img src="{{ albom.photo.getPicture() }}" alt="">
 							<div class="album__descr">
-								<div class="album__descr__left">Очень крутое мероприятие ну вот прям очень</div>
-								<div class="album__descr__right">123</div>
+								<div class="album__descr__left">{{ albom.name }}</div>
+								<div class="album__descr__right">{{ albom.photos|length }}</div>
 							</div>
 						</a>
 					</div>
