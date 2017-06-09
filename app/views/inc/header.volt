@@ -22,11 +22,19 @@
 				<div class="head-nav">
 					<span class="menu"></span>
 					<ul class="cl-effect-15">
+						<li class="mob-search">
+							<div class="search2">
+								<form action="/search/" onsubmit="return main.checkSearch(this);">
+									<input type="text" name="search" value="Поиск..." placeholder="Поиск..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Поиск...';}">
+									<input type="submit" value="">
+								</form>
+							</div>
+						</li>
 						{% for key,menuItem in menu %}
 							<li
 								class="{{ (activeMenu is defined and activeMenu == key) ? 'active ' : ''}}{{ (menuItem|length > 1) ? 'dropdown' : '"' }}"
 								{{ (menuItem|length > 1) ? 'onclick="main.showMobSubmenu(this)"' : '"' }}>
-								<a href="{{ (menuItem|length > 1) ? 'javasctipt:void(0);' : '/' ~ menuItem[0].url ~ '/' }}" data-hover="{{ menuNames[key] }}">{{ menuNames[key] }}</a>
+								<a href="{{ (menuItem|length > 1) ? 'javasctipt:void(0);' : '/' ~ menuItem[0].url ~ '/' }}" >{{ menuNames[key] }}</a>
 								{% if menuItem|length > 1 %}
 									<ul class="dropdown-list-custom">
 										{% for element in menuItem %}
@@ -38,8 +46,7 @@
 								{% endif %}
 							</li>
 						{% endfor %}
-						<li><a href="/gallery/" data-hover="Фотогалерея">Фотогалерея</a></li>
-						<li><a href="/files/" data-hover="Файлы">Файлы</a></li>
+						<li><a href="/gallery/">Фотогалерея</a></li>
 						<div class="clearfix"> </div>
 					</ul>
 				</div>

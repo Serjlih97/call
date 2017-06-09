@@ -2,9 +2,15 @@
 
 {% block content %}
 	<div class="container">
-		<h2>Найденно новостей ({{ news|length }})</h2>
-		<h2>Найденно страниц ({{ pages|length }})</h2>
-		<div class="tab-1">
+		<div class="search-tabs">
+			<div class="tab active" data-tab-id="1" onclick="main.openTab(this, event)">
+				Найденно новостей ({{ news|length }})
+			</div>
+			<div class="tab" data-tab-id="2" onclick="main.openTab(this, event)">
+				Найденно страниц ({{ pages|length }})
+			</div>
+		</div>
+		<div class="tab-content tab-1 active">
 			{% for newsElement in news %}
 				<section class="post">
 					<div class="post__header clearfix">
@@ -27,7 +33,7 @@
 				</section>
 			{% endfor %}
 		</div>
-		<div class="tab-2">
+		<div class="tab-content tab-2">
 			{% for page in pages %}
 			    <section class="post">
 					<div class="post__header clearfix">
