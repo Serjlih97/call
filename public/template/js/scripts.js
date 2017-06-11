@@ -7,7 +7,14 @@ var main = {
 	init: function()
 	{
 		this.fancyBox();
-		this.initSlider();
+		this.initSlider({
+			bigSlider: '._photo-big-slider',
+			smallSlider: '._photo-small-slider'
+		});
+		this.initSlider({
+			bigSlider: '._video-big-slider',
+			smallSlider: '._video-small-slider'
+		});
 	},
 
 	fancyBox: function()
@@ -27,16 +34,17 @@ var main = {
 		$(instance).toggleClass('show-sub-menu');
 	},
 
-	initSlider: function()
+	initSlider: function(sliders)
 	{
+		console.log(sliders.bigSlider)
 		if($('.slider').length > 0)
 		{
-			$('.big-slider').slick({
+			$(sliders.bigSlider).slick({
 				slidesToShow: 1,
 				slidesToScroll: 1,
 				arrows: true,
 				fade: true,
-				asNavFor: '.small-slider',
+				asNavFor: sliders.smallSlider,
 				adaptiveHeight: true,
 				responsive: [
 				{
@@ -46,11 +54,11 @@ var main = {
 					}
 				}]
 			});
-			$('.small-slider').slick(
+			$(sliders.smallSlider).slick(
 			{
 				slidesToShow: 5,
 				slidesToScroll: 1,
-				asNavFor: '.big-slider',
+				asNavFor: sliders.bigSlider,
 				dots: false,
 				centerMode: true,
 				focusOnSelect: true,
