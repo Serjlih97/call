@@ -6,7 +6,7 @@
 	<div class="container">
 		<div class="header">
 			<div class="logo">
-				<a href="/"><img src="/template/images/logo.png" class="img-responsive" alt="" /></a>
+				<a href="/"><img src="{{ siteInfo.getLogo() }}" class="img-responsive" alt="" /></a>
 			</div>
 			<div class="header-right">
 				<div class="search2">
