@@ -36,7 +36,6 @@ var main = {
 
 	initSlider: function(sliders)
 	{
-		console.log(sliders.bigSlider)
 		if($('.slider').length > 0)
 		{
 			$(sliders.bigSlider).slick({
