@@ -12,7 +12,8 @@ class ControllerBase extends Controller
 	 */
 	public function initialize()
 	{
-		$pages = Pages::find(['conditions' => 'category < 5 and url != ""', 'order' => 'sort asc']);
+		$siteInfo = SiteInfo::findFirst();
+		$pages = Pages::find(['conditions' => 'category < 5 and url != ""', 'order' => 'category asc, sort asc']);
 
 		// Формируем страницы по категориям для меню
 		$menu = [];
@@ -23,6 +24,7 @@ class ControllerBase extends Controller
 			$menuNames[$page->parentCategory->id] = $page->parentCategory->name;
 		}
 
+		$this->view->setVar('siteInfo', $siteInfo);
 		$this->view->setVar('menu', $menu);
 		$this->view->setVar('menuNames', $menuNames);
 		$this->view->setVar('title', 'Колледж - Владикавказский колледж электроники');
