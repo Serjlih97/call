@@ -9,6 +9,15 @@ html,body{
 	font-family: 'Open Sans', sans-serif;
 	background:#fff;
 }
+h1
+{
+	font-size: 24px;
+	margin-bottom: 25px;
+}
+::-webkit-input-placeholder {color:#e0e0e0;}
+::-moz-placeholder          {color:#e0e0e0;}/* Firefox 19+ */
+:-moz-placeholder           {color:#e0e0e0;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#e0e0e0;}
 body a{
     transition:0.5s all;
 	-webkit-transition:0.5s all;
@@ -44,6 +53,11 @@ body a{
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
+.tab.disable
+{
+	opacity: 0.4;
+	pointer-events: none;
+}
 .tab.active
 {
 	color: #fff;
@@ -55,6 +69,13 @@ body a{
 }
 .logo a{
 	display:block;
+	font-size: 22px;
+	color: #fff;
+}
+.logo a:hover
+{
+	text-decoration: none;
+	color: #2bb4e4;
 }
 .logo {
 	float: left;
@@ -62,6 +83,7 @@ body a{
 .logo img
 {
 	width: 90px;
+	margin-right: 20px;
 }
 .head-nav ul li{
 	display: inline-block;
@@ -139,7 +161,7 @@ ul a:focus {
 .header-right {
 	float: right;
 	/*margin: 2.1em 0;*/
-	margin-top: 42px;
+	margin-top: 35px;
 }
 .header-right ul {
 	padding: 0;
@@ -205,6 +227,7 @@ i.twt:hover {
 /*--*/
 .banner{
 	background:#556a7f;
+	position: relative;
 }
 .content{
 	background:#f5f6f7;
@@ -220,7 +243,7 @@ i.twt:hover {
 }
 .content h2 {
 	text-align: center;
-	font-size: 1.1em;
+	font-size: 18px;
 	font-weight: 600;
 	color: #556a7f;
 	text-transform: uppercase;
@@ -998,7 +1021,7 @@ ul#myList {
 	padding: 13px 20px;
 	width: 60%;
 	color: #444;
-	font-size: 0.85em;
+	font-size: 14px;
 	outline: none;
 	height: 150px;
 	display: block;
@@ -1034,7 +1057,7 @@ ul.links li, ul.links_middle li, ul.links_bottom li {
 }
 ul.links li, ul.links_middle li, ul.links_bottom li {
 	color: #999;
-	font-size: 0.85em;
+	font-size: 14px;
 }
 .details li i {
 	width: 20px;
@@ -1094,6 +1117,7 @@ ul.links li.last {
     border-left: 1px solid #000;
     padding: 20px;
     line-height: 14px;
+    max-width: 500px;
 }
 .content table td p,
 .content table th p
@@ -1101,6 +1125,14 @@ ul.links li.last {
 	padding: 0;
 	margin: 0;
 }
+
+.content table td a,
+.content table th a
+{
+	font-weight: bold;
+	text-decoration: none;
+}
+
 .content table td,
 .content table th
 {
@@ -1122,9 +1154,9 @@ ul.links li.last {
 }
 .file-link
 {
-	display: block;
-	font-size: 22px;
-	margin-right: 30px;
+	max-width: 60%;
+	display: inline-block;
+	font-size: 16px;
 	text-transform: uppercase;
 	color: #000;
 	font-weight: bold;
@@ -1162,48 +1194,48 @@ ul.links li.last {
 	/*font-size: 0.875em;*/
 }
 .content h4 {
-	font-size: 0.9em;
+	font-size: 16px;
 }
 .content p {
-	font-size: 0.8em;
+	font-size: 14px;
 }
 .archievs {
 	text-align: left;
 	display: none;
 }
 .link {
-	font-size: 0.85em;
+	font-size: 14px;
 }
 .content h3 {
-	font-size: 0.9em;
+	font-size: 16px;
 }
 .integer li {
 	width: 47%;
 }
 .posts h6 a {
-	font-size: 0.875em;
+	font-size: 14px;
 }
 .comments h6 a {
-	font-size: 0.875em;
+	font-size: 14px;
 }
 .categories h6 a {
-	font-size: 0.875em;
+	font-size: 14px;
 }
 .lorem iframe {
 	width: 161px;
 }
 .posts li a {
-	font-size: 0.85em;
+	font-size: 14px;
 }
 .comments li a {
 	color: #868f98;
-	font-size: 0.85em;
+	font-size: 14px;
 }
 .archievs li a {
-	font-size: 0.85em;
+	font-size: 14px;
 }
 .categories li a {
-	font-size: 0.85em;
+	font-size: 14px;
 }
 .footer h6 {
 	font-size: 0.875em;
@@ -1212,7 +1244,7 @@ ul.links li.last {
 	padding: 2em 0;
 }
 .footer p {
-	font-size: 0.85em;
+	font-size: 14px;
 }
 .content {
 	padding: 2em 0;
@@ -1221,7 +1253,7 @@ ul.links li.last {
 	font-size: 1.3em;
 }
 .biography-into p {
-	font-size: 0.85em;
+	font-size: 14px;
 }
 .about h2 {
 	font-size: 2em;
@@ -1277,12 +1309,13 @@ h1
 	font-size: 1.2em;
 }
 }
-h1
-{
-	margin-bottom: 30px;
-}
 /*-- responsive-mediaquries --*/
 @media(max-width:768px){
+	.file-link
+	{
+		max-width: 100%;
+		word-wrap: break-word;
+	}
 .head-nav ul li{
 	display:block;
 	float:none;
@@ -1307,7 +1340,8 @@ h1
 	display: block;
 	background: none;
 	position: absolute;
-	top: 2.1em;
+	top: 50%;
+	margin-top: -12px;
 	right: 2em;
 }
 .head-nav span.menu:before{
@@ -1352,6 +1386,7 @@ h1
 	text-align: center;
 }
 .content h2 {
+	font-size: 16px;
 	/*text-align: center;*/
 }
 .contact-top h2 {
@@ -1438,7 +1473,7 @@ div#portfolio {
 	font-size: 1.1em;
 }
 .contact p {
-	font-size: 0.85em;
+	font-size: 14px;
 }
 .contact-info input[type="submit"] {
 	padding: 0.4em 1.8em;
@@ -1448,7 +1483,7 @@ div#portfolio {
 	font-size: 1.3em;
 }
 .details p {
-	font-size: 0.85em;
+	font-size: 14px;
 }
 .details h3 {
 	font-size: 1.3em;
@@ -1501,6 +1536,10 @@ div#portfolio {
 }
 /*-- responsive-mediaquries --*/
 @media(max-width:640px){
+.logo a 
+{
+	font-size: 0;
+}
 .about h2 {
 	font-size: 1.6em;
 }
@@ -2167,6 +2206,10 @@ ul.links li, ul.links_middle li, ul.links_bottom li {
 
 @media (max-width: 768px)
 {
+	.posts h4
+	{
+		font-size: 14px;
+	}
 	.search2 input[type="text"]
 	{
 		width: 95.333%;

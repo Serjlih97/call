@@ -20,8 +20,16 @@ class SearchController extends ControllerBase
 		];
 
 		$news  = News::find($filter);
-		$pages = Pages::find($filter);
 
+		if(count($pages) > 0)
+			$activetab = 'pages';
+
+		$pages = Pages::find($filter);
+		if(count($news) > 0)
+			$activetab = 'news';
+
+		
+		$this->view->setVar('activetab', $activetab);
 		$this->view->setVar('news', $news);
 		$this->view->setVar('pages', $pages);
 	}

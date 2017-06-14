@@ -6,7 +6,9 @@
 	<div class="container">
 		<div class="header">
 			<div class="logo">
-				<a href="/"><img src="{{ siteInfo.getLogo() }}" class="img-responsive" alt="" /></a>
+				<a href="/"><img src="{{ siteInfo.getLogo() }}" class="img-responsive" alt="" />
+					Владикавказский колледж электроники
+				</a>
 			</div>
 			<div class="header-right">
 				<div class="search2">
