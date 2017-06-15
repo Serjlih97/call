@@ -2,8 +2,7 @@
 
 {% block content %}
 	<div class="container">
-		<h1 class="gallery-header">Галерея</h1>
-
+		<h1 class="gallery-header">{{ albom.name }}</h1>
 		<div class="row">
 			{% for photo in photos %}
 				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">

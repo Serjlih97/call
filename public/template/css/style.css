@@ -231,9 +231,12 @@ i.twt:hover {
 }
 .content{
 	background:#f5f6f7;
-	/*padding:3em 0;*/
 	padding-top: 3em;
 	padding-bottom: 2em;
+}
+.content ul li
+{
+	margin-bottom: 5px;
 }
 .dapibus {
 	background: #fff;
@@ -1130,7 +1133,8 @@ ul.links li.last {
 .content table th a
 {
 	font-weight: bold;
-	text-decoration: none;
+	text-decoration: underline;
+	line-height: 18px;
 }
 
 .content table td,
@@ -1490,9 +1494,7 @@ div#portfolio {
 }
 .posts {
 	text-align: left;
-	/*float: left;*/
-	/* width: 50%; */
-	/*margin: 2em 0 0;*/
+	margin-bottom: 20px;
 }
 .archievs {
 	display: none;
@@ -1654,7 +1656,7 @@ a.b-home {
 }
 }
 /*-- responsive-mediaquries --*/
-@media(max-width:320px){
+@media(max-width:480px){
 .head-nav span.menu {
 	top: 55px;
 	right: 1.5em;
@@ -1756,7 +1758,7 @@ a.b-home {
 	font-size: 0.750em;
 }
 .posts li a {
-	font-size: 0.750em;
+	font-size: 14px;
 }
 .comments li a {
 	color: #868f98;
@@ -1790,7 +1792,7 @@ a.b-home {
 .posts li {
 	display: block;
 	overflow: hidden;
-	height: 25px;
+	/*height: 25px;*/
 }
 #portfoliolist .portfolio {
 	margin: 0.3em 0;
@@ -2119,7 +2121,7 @@ ul.links li, ul.links_middle li, ul.links_bottom li {
 
 .slider
 {
-	width: 70%;
+	width: 85%;
 	margin: 20px auto;
 }
 
@@ -2134,6 +2136,17 @@ ul.links li, ul.links_middle li, ul.links_bottom li {
 	width: 100%;
 }
 
+.center-items
+{
+	transform: none !important;
+	width: auto !important;
+	text-align: center;
+}
+.center-items .small-slider__item
+{
+	display: inline-block;
+	float: none;
+}
 .small-slider__item
 {
 	padding: 0 5px;
@@ -2154,7 +2167,6 @@ ul.links li, ul.links_middle li, ul.links_bottom li {
 	position: relative;
 	height: 250px;
 }
-
 
 .album img
 {

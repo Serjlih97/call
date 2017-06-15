@@ -3,7 +3,9 @@ $(document).ready(function()
 	main.init();
 })
 
+// основной объект
 var main = {
+	// инициализация плагинов
 	init: function()
 	{
 		this.fancyBox();
@@ -15,25 +17,34 @@ var main = {
 			bigSlider: '._video-big-slider',
 			smallSlider: '._video-small-slider'
 		});
+
+		if($('.small-slider__item').length < 6)
+		{
+			$('.small-slider__item').parents('.slick-track').addClass('center-items');
+		}
 	},
 
+	// функция для инициализации галерии
 	fancyBox: function()
 	{
 		if($('.fancy-box').length > 0)
 			$('.fancy-box').fancyBox();
 	},
 
+	// функция для раскратия меню второго уровня
 	showSubmenu: function(instance, event)
 	{
 		event.preventDefault();
 		$(instance).siblings('.sub-menu').slideToggle();
 	},
 
+	// функция для раскрытия списка подпунктов осного меню на мобильных устройствах
 	showMobSubmenu: function(instance)
 	{
 		$(instance).toggleClass('show-sub-menu');
 	},
 
+	// функция для инициалзии слайдеров
 	initSlider: function(sliders)
 	{
 		if($('.slider').length > 0)
@@ -84,6 +95,8 @@ var main = {
 			})
 		}
 	},
+
+	// функция для получения следующей страницы для пагинации
 	getNewsPage:function(page)
 	{
 		$.ajax({
@@ -97,6 +110,8 @@ var main = {
 				$('._news-list').html(e.html);
 		});
 	},
+
+	// функция для проверки заполненности поискового поля
 	checkSearch: function(instance)
 	{
 		if($(instance).find('input:text').val() == 'Поиск...')
@@ -105,6 +120,7 @@ var main = {
 		return true;
 	},
 
+	// функция для открытия выбранного таба
 	openTab: function(instance, event)
 	{
 		event.preventDefault();

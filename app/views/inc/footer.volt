@@ -1,6 +1,6 @@
 <div class="custom-footer clearfix">
 	<div class="footer-half">
-		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ace309e0479f2f5ea068c378467f832eb45cc88696fd84f921b4cfb32277b139a&amp;width=100%25&amp;height=250&amp;lang=ru_RU&amp;scroll=true"></script>
+		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A97bda4884bdc0b7ee62467056d638037de917f490a876bfcc994f038073d0a4f&amp;width=100%25&amp;height=250&amp;lang=ru_RU&amp;scroll=true"></script>
 	</div>
 	<div class="footer-half">
 		<div class="footer-contacts">
