@@ -1658,7 +1658,7 @@ a.b-home {
 /*-- responsive-mediaquries --*/
 @media(max-width:480px){
 .head-nav span.menu {
-	top: 55px;
+	top: 50%;
 	right: 1.5em;
 }
 .biography-into h4 {
