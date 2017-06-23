@@ -1190,7 +1190,12 @@ ul.links li.last {
 @media(max-width:1366px){
 }
 /*-- responsive-mediaquries --*/
-@media(max-width:1280px){
+@media(max-width:991px)
+{
+	.logo a
+	{
+		font-size: 18px;
+	}
 }
 /*-- responsive-mediaquries --*/
 @media(max-width:1024px){

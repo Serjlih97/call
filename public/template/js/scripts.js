@@ -107,7 +107,10 @@ var main = {
 		}).done(function(e)
 		{
 			if(typeof e.success != 'undefined' && e.success)
+			{
 				$('._news-list').html(e.html);
+				$(document).scrollTop($('._news-list').offset().top);
+			}
 		});
 	},
 
