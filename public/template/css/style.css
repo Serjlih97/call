@@ -238,6 +238,10 @@ i.twt:hover {
 {
 	margin-bottom: 5px;
 }
+.content p a
+{
+	text-decoration: underline;
+}
 .dapibus {
 	background: #fff;
 	padding: 2em 1.3em;
